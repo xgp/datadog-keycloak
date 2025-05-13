@@ -2,7 +2,7 @@ init_config:
     timeout: 300
 
 instances:
-    - openmetrics_endpoint: 'http://localhost:8080/auth/metrics'
+    - openmetrics_endpoint: '%%env_KC_OPENMETRICS_ENDPOINT%%'
       metrics:
           - 'http_server_requests_seconds'
           - 'http_server_active_requests'
